@@ -90,7 +90,7 @@ export class Mesh {
         
         const hue = dist / this.maxDist * this.colorPalet - this.colorTimer;
 
-        ctx.strokeStyle = `hsl(${hue}, 80%, 60%)`
+        ctx.strokeStyle = `hsl(${hue}, 70%, 70%)`
         ctx.fillStyle = `hsl(${hue}, 85%, 50%)`;
 
         ctx.beginPath();
@@ -99,10 +99,8 @@ export class Mesh {
         ctx.lineTo(c.x, c.y);
         ctx.closePath();
 
-        ctx.stroke();
-        if (i%Math.random()*100 | 0 !== 0) return
         ctx.fill();
+        ctx.stroke();
       });
   }
-  
 }
