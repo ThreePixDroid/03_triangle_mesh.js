@@ -19,9 +19,7 @@ class App {
     this.mesh.updateTriangles(correction);
   }
   display() {
-    this.layer.context.clearRect(0, 0, this.layer.w, this.layer.h)
-    // this.mesh.renderTriangles(this.layer.context);
-    this.mesh.renderCells4(this.layer.context);
+    this.mesh.renderTriangles(this.layer.context);
     // this.mesh.renderParticles(this.layer.context);
   }
 }
